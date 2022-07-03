@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background: #555;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<div class="content">
+<h1>User Registration Form</h1>
+<form action="/action_page.php" method="post" target="_blank">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+        <label class="form-label form-label-left form-label-auto" id="label_11" for="input_11"> Gender :</label>
+          <select class="form-dropdown" id="input_11" name="q11_gender" style="width:150px" data-component="dropdown">
+            <option value="">  </option>
+            <option value="Male"> Male </option>
+            <option value="Female"> Female </option>
+            <option value="">  </option>
+          </select><br><br>
+		  <label for="datetime">Birth Date :</label>
+		  <input type="date" id="datetime" name="date" required><br><br>
+		  <label for=email>Email :</label>
+		  <input type="email" id="email" name="email" required><br><br>
+		  <label class="form-sub-label" for="input_5_postal" id="sublabel_5_postal style="min-height:13px" aria-hidden="false"> postal Code :</label>
+		  <input type="text" id="input_5_postal" name="q5_address[postal]" class="form-textbox form-address-postal" data-defaultvalue="" autoComplete="section-input_5 postal-code" value="" data-component="zip" aria-labelledby="label_5 sublabel_5_postal" />
+           <br><br>
+		   <label class="form-label form-label-left form-label-auto" id="label_13" for="input_13"> Photo upload :</label>
+        <div id="cid_13" class="form-input">
+          <input type="file" id="input_13" name="q13_photoUpload" class="form-upload" data-imagevalidate="yes" data-file-accept=" jpg, jpeg, png, gif" data-file-maxsize="10854" data-file-minsize="0" data-file-limit="" data-component="fileupload" />
+        </div><br><br>
+		<h3>Education details:</h3>
+		<label id="label_17" for="input_17"> Degree Marks (%) :</label>
+          <input type="text" id="input_17" name="q17_degreeMarks" data-type="input-textbox" class="form-textbox validate[Numeric, minCharLimit]" data-defaultvalue="" size="3" value="" maxLength="100" data-minlength="1" data-component="textbox" aria-labelledby="label_17" /><br><br>
+		  <label id="label_17" for="input_17"> HSC (%) :</label>
+          <input type="text" id="input_17" name="q17_degreeMarks" data-type="input-textbox" class="form-textbox validate[Numeric, minCharLimit]" data-defaultvalue="" size="3" value="" maxLength="100" data-minlength="1" data-component="textbox" aria-labelledby="label_17" /><br><br>
+		  <label id="label_17" for="input_17"> SSC (%) :</label>
+          <input type="text" id="input_17" name="q17_degreeMarks" data-type="input-textbox" class="form-textbox validate[Numeric, minCharLimit]" data-defaultvalue="" size="3" value="" maxLength="100" data-minlength="1" data-component="textbox" aria-labelledby="label_17" /><br><br>
+  <input type="submit" value="Submit">
+  </div>
+</form>
+</body>
+</html>
